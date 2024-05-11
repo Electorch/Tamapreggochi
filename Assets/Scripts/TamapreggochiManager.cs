@@ -3,7 +3,7 @@ using UnityEngine;
 public class TamapreggochiManager : MonoBehaviour
 {
 	[Tooltip("Mouseover")]
-	public string Notes = "What does this script do?";
+	public string Notes = "This script manages all hypothetical preggochis";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
