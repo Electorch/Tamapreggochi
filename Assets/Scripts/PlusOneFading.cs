@@ -20,6 +20,8 @@ public class PlusOneFading : MonoBehaviour
     }
 	public void OnClickFoodButton()
 	{
+		//instantiate img of sprite
+		
 		restartFade = false;
 	}
 	
