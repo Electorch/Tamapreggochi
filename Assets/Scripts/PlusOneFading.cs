@@ -10,7 +10,10 @@ public class PlusOneFading : MonoBehaviour
 	private Vector3 startPos;
     private float timer = 0.0f;
 	private bool restartFade; // To stop the effect and restart it
-	
+	public GameObject panel;
+	public string foodsprite;
+	public int foodCount;
+	public int offsetx;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +24,11 @@ public class PlusOneFading : MonoBehaviour
 	public void OnClickFoodButton()
 	{
 		//instantiate img of sprite
-		
+		RectTransform spriteFood = Instantiate(Resources.Load<RectTransform>(foodsprite));
+		spriteFood.transform.SetParent(panel.transform);
+		spriteFood.anchoredPosition = new Vector3(-25,0,0)+(new Vector3(1+offsetx,0,0)*foodCount);
+		spriteFood.localScale = Vector3.one;
+		foodCount++;
 		restartFade = false;
 	}
 	
