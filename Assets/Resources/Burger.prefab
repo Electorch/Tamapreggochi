@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 788112532582272332}
   - component: {fileID: 1043250059049424981}
   m_Layer: 5
-  m_Name: French Fries
+  m_Name: Burger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8090622000860335674, guid: 80c28fed672c5fa47a02d699207f7192, type: 3}
+  m_Sprite: {fileID: -7483554341461126079, guid: d885e6b136ffc3d43a9aa63823522be6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

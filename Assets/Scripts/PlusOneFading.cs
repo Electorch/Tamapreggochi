@@ -26,7 +26,7 @@ public class PlusOneFading : MonoBehaviour
 		//instantiate img of sprite
 		RectTransform spriteFood = Instantiate(Resources.Load<RectTransform>(foodsprite));
 		spriteFood.transform.SetParent(panel.transform);
-		spriteFood.anchoredPosition = new Vector3(-25,0,0)+(new Vector3(1+offsetx,0,0)*foodCount);
+		spriteFood.anchoredPosition = Vector3.zero+(new Vector3(1+offsetx,0,0)*foodCount);
 		spriteFood.localScale = Vector3.one;
 		foodCount++;
 		restartFade = false;
