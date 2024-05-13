@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1370460274949819705}
   - component: {fileID: 788112532582272332}
   - component: {fileID: 1043250059049424981}
+  - component: {fileID: 8666255410048525211}
   m_Layer: 5
   m_Name: French Fries
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 25, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &788112532582272332
 CanvasRenderer:
@@ -75,3 +76,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8666255410048525211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2470345023143480070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4621f8caf6f568942838831481c3f6a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodKind: 20

@@ -14,6 +14,7 @@ public class PlusOneFading : MonoBehaviour
 	public string foodsprite;
 	public int foodCount;
 	public int offsetx;
+	public TamapreggochiManager tamapreggochiManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +31,7 @@ public class PlusOneFading : MonoBehaviour
 		spriteFood.localScale = Vector3.one;
 		foodCount++;
 		restartFade = false;
+		tamapreggochiManager.WeightIncreasedOnClick();
 	}
 	
     // Update is called once per frame
