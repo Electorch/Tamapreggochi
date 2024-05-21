@@ -15,6 +15,7 @@ public class PlusOneFading : MonoBehaviour
 	public int foodCount;
 	public int offsetx;
 	public TamapreggochiManager tamapreggochiManager;
+	public int price;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,8 +23,18 @@ public class PlusOneFading : MonoBehaviour
         text.color = startColor;
 		startPos = transform.position;
     }
+	public void OnClickConsignButton()
+	{
+		if(panel.transform.childCount > 0)
+		{
+			tamapreggochiManager.coins+=5;
+			Destroy(panel.transform.GetChild(panel.transform.childCount-1).gameObject);
+		}
+	}
 	public void OnClickFoodButton()
 	{
+		if(foodCount >= 25)return;
+		if(tamapreggochiManager.coins<1)return;
 		//instantiate img of sprite
 		RectTransform spriteFood = Instantiate(Resources.Load<RectTransform>(foodsprite));
 		spriteFood.transform.SetParent(panel.transform);
@@ -31,7 +42,7 @@ public class PlusOneFading : MonoBehaviour
 		spriteFood.localScale = Vector3.one;
 		foodCount++;
 		restartFade = false;
-		tamapreggochiManager.WeightIncreasedOnClick();
+		tamapreggochiManager.WeightIncreasedOnClick(price);
 	}
 	
     // Update is called once per frame
